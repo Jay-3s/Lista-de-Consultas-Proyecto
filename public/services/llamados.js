@@ -1,6 +1,6 @@
 async function getUsers() {
     try {
-        const response = await fetch('http://localhost:3001/', {
+        const response = await fetch('http://localhost:3001/users', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
@@ -12,6 +12,8 @@ async function getUsers() {
         }
 
         const users = await response.json();
+        console.log(users);
+        
         return users;
     } catch (error) {
         console.error('Error fetching users:', error);
@@ -23,18 +25,19 @@ export { getUsers };
 
 //////////LLAMADO POST//////////
 
-async function postUsers(nombre,password) {
+async function postUsers(nomRe,conRe,typeUser) {
     try {
      
         const userData = { 
-            nombre,
-            password
+            nomRe,
+            conRe,
+            typeUser
         
         };
 
 
 
-        const response = await fetch("http://localhost:3000/users", {
+        const response = await fetch("http://localhost:3001/users", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -57,13 +60,14 @@ export{postUsers}
 //////////////LLAMADO UPDATE/////////////
 
 
-async function updateUsers(nombre,password) 
+async function updateUsers(nomRe,conRe,typeUser)
 {
     try {
      
         const userData = { 
-            nombre, 
-            password
+            nomRe,
+            conRe,
+            typeUser
         
         };
 
@@ -71,7 +75,7 @@ async function updateUsers(nombre,password)
         
 
 
-        const response = await fetch("http://localhost:3000/users/"+id, {
+        const response = await fetch("http://localhost:3001/users/"+id, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
@@ -96,7 +100,7 @@ export{updateUsers}
 
 async function deleteUser(id) {
     try {
-        const response = await fetch(`http://localhost:3000/users/${id}`, {
+        const response = await fetch(`http://localhost:3001/users/${id}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json'

@@ -1,3 +1,22 @@
 {
-    "users": []
+  "users": [
+    {
+      "id": "61c4",
+      "nomRe": "Jostin",
+      "conRe": "1",
+      "typeUser": "admin"
+    },
+    {
+      "id": "aed8",
+      "nomRe": "buvyt",
+      "conRe": "sdds",
+      "typeUser": "estudiante"
+    },
+    {
+      "id": "3c12",
+      "nomRe": "Darien",
+      "conRe": "123",
+      "typeUser": "estudiante"
+    }
+  ]
 }
