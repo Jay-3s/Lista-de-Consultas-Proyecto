@@ -18,5 +18,11 @@
       "conRe": "123",
       "typeUser": "estudiante"
     }
+  ],
+  "solicitudes": [
+    {
+      "id": "c0c7",
+      "solis": "solicita ayuda con la creación del tic tac toe"
+    }
   ]
 }

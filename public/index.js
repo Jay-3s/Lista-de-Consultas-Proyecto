@@ -1,4 +1,4 @@
-import { postUsers,getUsers,updateUsers,deleteUser } from "./services/llamados.js"
+import { postSoli,getUsers,updateUsers,deleteUser } from "./services/llamados.js"
 const  Iniciar = document.getElementById("Iniciar")
 const nomSe = document.getElementById("nomSe")
 const conSe = document.getElementById("conSe")

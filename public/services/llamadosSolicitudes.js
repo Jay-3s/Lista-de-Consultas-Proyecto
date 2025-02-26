@@ -1,6 +1,6 @@
-async function getUsers() {
+async function getSoli() {
     try {
-        const response = await fetch('http://localhost:3000/users', {
+        const response = await fetch('http://localhost:3000/solicitudes', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
@@ -13,7 +13,6 @@ async function getUsers() {
 
         const users = await response.json();
         
-        
         return users;
     } catch (error) {
         console.error('Error fetching users:', error);
@@ -21,26 +20,26 @@ async function getUsers() {
     }
 }
 
-export { getUsers };
+export { getSoli };
 
 //////////LLAMADO POST//////////
 
-async function postSoli(solicitudes) {
+async function postSoli(solis) {
     try {
      
-        const soliData = { 
-            solicitudes
+        const userData = { 
+            solis
         
         };
 
 
 
-        const response = await fetch("http://localhost:3000/users", {
+        const response = await fetch("http://localhost:3000/solicitudes", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify(soliData)
+            body: JSON.stringify(userData)
         });
 
      
@@ -58,22 +57,19 @@ export{postSoli}
 //////////////LLAMADO UPDATE/////////////
 
 
-async function updateUsers(nomRe,conRe,typeUser)
+async function updateSoli(solis)
 {
     try {
      
         const userData = { 
-            nomRe,
-            conRe,
-            typeUser
-        
+           solis
         };
 
 
         
 
 
-        const response = await fetch("http://localhost:3000/users/"+id, {
+        const response = await fetch("http://localhost:3000/solicitudes/"+id, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
@@ -89,16 +85,16 @@ async function updateUsers(nomRe,conRe,typeUser)
     }
 }
 
-export{updateUsers}
+export{updateSoli}
 
 
 
 //////////////LLAMADO DELETE/////////////
 
 
-async function deleteUser(id) {
+async function deleteSoli(id) {
     try {
-        const response = await fetch(`http://localhost:3000/users/${id}`, {
+        const response = await fetch(`http://localhost:3000/solicitudes/${id}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json'
@@ -116,4 +112,4 @@ async function deleteUser(id) {
     }
 }
 
-export { deleteUser };
+export { deleteSoli };
