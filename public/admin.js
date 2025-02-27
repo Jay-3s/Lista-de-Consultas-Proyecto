@@ -1,5 +1,5 @@
 
-import { getSoli, postSoli } from "./services/llamadosSolicitudes.js";
+import { deleteSoli, getSoli, postSoli } from "./services/llamadosSolicitudes.js";
 
 const soli = document.getElementById("soli")
 const solicitutu = document.getElementById("solicitutu")
@@ -24,9 +24,29 @@ async function mostrarConsultas() {
 
         solicitutu.appendChild(ContConsulta)
 
-        let checkbox = document.createElement("checkbox")
+        let checkbox = document.createElement("input")
+        checkbox.setAttribute("type", "checkbox");
 
+        let eliminar = document.createElement("button")
+
+        eliminar.textContent = "Eliminar"
+
+        ContConsulta.appendChild(eliminar)
+    
         ContConsulta.appendChild(checkbox)
+
+        eliminar.addEventListener("click" ,function () {
+
+            deleteSoli(datos[index].id)
+            location.reload()
+            
+        })
+
+        checkbox.addEventListener("click", function () {
+
+            checkbox.checked = true;
+            
+        })
     }
     
 } 
