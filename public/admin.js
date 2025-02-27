@@ -1,7 +1,6 @@
 
 import { deleteSoli, getSoli, postSoli } from "./services/llamadosSolicitudes.js";
 
-const soli = document.getElementById("soli")
 const solicitutu = document.getElementById("solicitutu")
 
 mostrarConsultas()
@@ -42,11 +41,8 @@ async function mostrarConsultas() {
             
         })
 
-        checkbox.addEventListener("click", function () {
-
-            checkbox.checked = true;
-            
-        })
+            checkbox.checked = true; 
+      
     }
     
 } 

@@ -1,0 +1,26 @@
+h1{
+    color: goldenrod;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2{
+    color: goldenrod;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#solicitutu{
+    
+    display: flex;
+    flex-direction: column;
+    border: 5px solid goldenrod;
+    width: 98%;
+    height: 450px;
+    border-radius: 5px;
+ }
+
+ /*@media (max-width: 950px) {
+    h1{
+        font-size: 20px;
+
+    }
+ }*/
