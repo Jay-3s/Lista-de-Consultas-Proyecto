@@ -18,6 +18,18 @@ h2{
     border-radius: 5px;
  }
 
+ .btn{
+    background-color: goldenrod;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 200px;
+    height: 20px;
+    border-radius: 5px;
+    font-size: large;
+    
+    
+ }
+
  /*@media (max-width: 950px) {
     h1{
         font-size: 20px;

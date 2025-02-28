@@ -30,6 +30,8 @@ async function mostrarConsultas() {
 
         eliminar.textContent = "Eliminar"
 
+        eliminar.setAttribute("class", "btn");
+
         ContConsulta.appendChild(eliminar)
     
         ContConsulta.appendChild(checkbox)
