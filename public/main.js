@@ -28,6 +28,7 @@ async function mostrarConsultas() {
         PConsulta.id = "PConsulta"
         PConsulta.textContent = element
 
+        PConsulta.setAttribute("class", "p");
         
         ContConsulta.appendChild(PConsulta)
 

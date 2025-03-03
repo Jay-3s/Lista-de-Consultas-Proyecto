@@ -7,12 +7,6 @@
       "typeUser": "admin"
     },
     {
-      "id": "aed8",
-      "nomRe": "buvyt",
-      "conRe": "sdds",
-      "typeUser": "estudiante"
-    },
-    {
       "id": "3c12",
       "nomRe": "Darien",
       "conRe": "123",
@@ -23,6 +17,10 @@
     {
       "id": "d3e7",
       "solis": "solicita ayuda con la creación del tic tac toe"
+    },
+    {
+      "id": "eea1",
+      "solis": "solicita ayuda con la elaboración del ToDo List"
     }
   ]
 }
