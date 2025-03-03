@@ -21,12 +21,8 @@
   ],
   "solicitudes": [
     {
-      "id": "1f09",
+      "id": "d3e7",
       "solis": "solicita ayuda con la creación del tic tac toe"
-    },
-    {
-      "id": "86cf",
-      "solis": "solicita ayuda con la creación de la funcionalidad de ToDo List"
     }
   ]
 }

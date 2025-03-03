@@ -6,9 +6,6 @@ const btnAgregar = document.getElementById("btnAgregar");
 const div = document.getElementById("lista");
 
 
-let tareas = JSON.parse(localStorage.getItem("tareasCreadas"));
-//precargar array con datos de localStorage
-
 btnAgregar.addEventListener("click", function() {
 
     postSoli(input.value)

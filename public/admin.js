@@ -36,14 +36,14 @@ async function mostrarConsultas() {
     
         ContConsulta.appendChild(checkbox)
 
+        checkbox.checked = true; 
+
         eliminar.addEventListener("click" ,function () {
 
             deleteSoli(datos[index].id)
             location.reload()
             
         })
-
-            checkbox.checked = true; 
       
     }
     
